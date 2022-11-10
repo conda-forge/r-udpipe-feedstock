@@ -1,4 +1,4 @@
-{% set version = "0.8.9" %}
+{% set version = "0.8.10" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/udpipe_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/udpipe/udpipe_{{ version }}.tar.gz
-  sha256: ed2a5a56c714b038926acd92c68d5748813ebc8ef01b519ff7350e514676bddd
+  sha256: 2468df3de9ce9d6c7ea46aa7b3f3c2ac348cdf74d355118dae409efb39d1f646
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
