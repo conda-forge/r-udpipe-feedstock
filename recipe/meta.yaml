@@ -1,4 +1,4 @@
-{% set version = "0.8.15" %}
+{% set version = "0.8.16" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/udpipe_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/udpipe/udpipe_{{ version }}.tar.gz
-  sha256: e3a177d6ce849ed897afcbc415e170a30a83d1673db71bd452d8c3ae20cbf23c
+  sha256: 76e949c8926d4e320be50dbde5334c8f97ffdedcfd4891c5710df257863d3bd0
 
 build:
   number: 0
